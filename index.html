@@ -1,13 +1,13 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Web Support Analyst Test</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
-    <script type="text/javascript" src="client.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+    <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script defer type="text/javascript" src="client.js"></script>
     <link href="global.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 </head>
@@ -27,25 +27,26 @@
         <section class="content">
             <article class="panel">
                 <h2>Left Pane Title</h2>
-                <p>Praesent felis metus, pharetra id egestas maximus, pretium non purus. Donec et mauris ut tellus porta ultricies. Vestibulum eros elit, tempor non pellentesque et, varius eu ante. Vivamus suscipit dolor sapien, eu consequat magna posuere vel. Duis eu velit sit amet eros feugiat varius id nec purus.
+                <p>Praesent felis metus, pharetra id egestas maximus, pretium non purus. Donec et mauris ut tellus porta ultricies. Vestibulum eros elit, tempor non pellentesque et, varius eu ante. Vivamus suscipit dolor sapien, eu consequat magna posuere vel. Duis eu velit sit amet eros feugiat varius id nec purus.</p>
             </article>
             <article class="panel">
-                <h2>Right Pane Title
+                <h2>Right Pane Title</h2>
                 <p>Praesent felis metus, pharetra id egestas maximus, pretium non purus. Donec et mauris ut tellus porta ultricies. Vestibulum eros elit, tempor non pellentesque et, varius eu ante. Vivamus suscipit dolor sapien, eu consequat magna posuere vel. Duis eu velit sit amet eros feugiat varius id nec purus.</p>
             </article>
         </section>
         <section class="news"></section>
         <footer class="footer">
-            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue ipsum a ligula tincidunt interdum. Proin ut nibh viverra lectus pretium pellentesque iaculis rhoncus tellus. Praesent eget nunc ipsum. Praesent diam velit, blandit vitae tincidunt sit amet, ullamcorper sit amet felis. Proin sodales elit sed orci lacinia, ut pretium elit mattis. Sed ut efficitur purus. Cras consequat ex leo, placerat aliquet ante consequat non.</P>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue ipsum a ligula tincidunt interdum. Proin ut nibh viverra lectus pretium pellentesque iaculis rhoncus tellus. Praesent eget nunc ipsum. Praesent diam velit, blandit vitae tincidunt sit amet, ullamcorper sit amet felis. Proin sodales elit sed orci lacinia, ut pretium elit mattis. Sed ut efficitur purus. Cras consequat ex leo, placerat aliquet ante consequat non.</p>
         </footer>
     </main>
     <script id="release-template" type="text/x-handlebars-template">
         {{#each releases}}
             <div class="entry">
                 <div class="thumb">
-                    <img src="{{thumb}}"></img>
+                    <img src="{{thumb}}" alt=""/>
                 </div>
-                <div class="content"><h2>{{headline}}</h2>
+                <div class="content">
+                    <h2>{{headline}}</h2>
                     <div class="date">
                         {{formatDate date "MMMM DD, YYYY"}}
                     </div>
