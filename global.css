@@ -61,10 +61,13 @@ html {
 body {
 	background: #222;
 	color: #fff;
+	max-width: 940px;
+	margin-left: auto;
+	margin-right: auto;
 }
 main {
-	max-width: 940px;
 	margin: 0 auto;
+	display: inline-block;
 }
 
 h2 {
@@ -86,11 +89,13 @@ footer>p {
 .nav {
 	margin: 20px 0;
 	background: #006fba;
+	text-align: center;
 }
 .nav_item {
 	display: inline-block;
 	padding: 20px 10px;
 	text-align: center;
+	width: 23%;
 }
 
 /* Content */
