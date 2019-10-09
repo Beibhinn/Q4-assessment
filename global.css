@@ -77,6 +77,10 @@ p {
 	line-height: 1.5rem;
 }
 
+footer>p {
+	margin-bottom: 4rem;
+}
+
 /* Navigation */
 
 .nav {
