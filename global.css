@@ -82,6 +82,8 @@ p {
 
 footer>p {
 	margin-bottom: 4rem;
+	font-size: 85%;
+	font-style: italic;
 }
 
 /* Navigation */
