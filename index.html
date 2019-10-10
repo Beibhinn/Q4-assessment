@@ -40,7 +40,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue ipsum a ligula tincidunt interdum. Proin ut nibh viverra lectus pretium pellentesque iaculis rhoncus tellus. Praesent eget nunc ipsum. Praesent diam velit, blandit vitae tincidunt sit amet, ullamcorper sit amet felis. Proin sodales elit sed orci lacinia, ut pretium elit mattis. Sed ut efficitur purus. Cras consequat ex leo, placerat aliquet ante consequat non.</p>
     </footer>
     <script id="release-template" type="text/x-handlebars-template">
-        {{#each releases}}
+        {{#limit releases limit="3"}}
             <div class="entry">
                 <div class="thumb">
                     <img src="{{thumb}}" alt=""/>
@@ -55,6 +55,6 @@
                     </div>
                 </div>
             </div>
-        {{/each}}
+        {{/limit}}
     </script>
 </body>
